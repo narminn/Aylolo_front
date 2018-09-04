@@ -1,0 +1,107 @@
+@font-face {
+    font-family: VisbyCF-Bold;
+    src: url(../fonts/VisbyCF-Bold-az.ttf);
+}
+@font-face {
+    font-family: VisbyCF-Medium;
+    src: url(../fonts/VisbyCF-Medium-az.ttf);
+}
+$colormain:#1CAA5C;
+$fontmain:VisbyCF-Bold;
+$fontfooter:VisbyCF-Medium;
+$colorblue:#182D79;
+$colororange:#EEAF18;
+
+
+
+a{
+  color: black;
+  font-family: $fontmain;
+  &:hover{
+    text-decoration: none;
+    color: black;
+
+  }
+}
+.reklam{
+  width: 100%;
+  height: 500px;
+  background-color: red;
+
+}
+.blue{
+  color: $colorblue;
+}
+.blueback{
+  background: $colorblue;
+}
+.blueborder{
+  border: 1px solid $colorblue;
+}
+.orange{
+  color:$colororange;
+}
+.orangeback{
+  background: $colororange;
+}
+.orangeborder{
+  border: 1px solid $colororange;
+}
+@import "header";
+@import "menu";
+@import "proUsers";
+@import "footer";
+
+@media(max-width:576px){
+  #header .logo {
+    width: 80%;
+}
+#footer .footerLogo {
+    width: 95%;
+}
+
+}
+@media(min-width:375px) and (max-width:576px){
+  #header .logo {
+    width: 55%;
+}
+#footer .footerLogo {
+    width: 70%;
+}
+}
+@media(min-width:375px) and (max-width:768px){
+  #header .login .add a {
+    font-size: 12px;
+  }
+  #header .login .register a {
+    font-size: 14px;
+}
+}
+@media(min-width:320px)and ( max-width:375px){
+  #header .login .add a {
+    font-size: 9px;
+  }
+  #header .login .register a {
+    font-size: 12px;
+}
+}
+@media(max-width:767px){
+  #mainBoxes .heading p {
+    font-size: 16px;
+}
+#mainBoxes .heading a p {
+    font-size: 14px;
+}
+#header .login .register {
+    float: left;
+}
+#header .search input {
+    width: 85%;
+  }
+
+}
+@media(min-width:576px)and ( max-width:994px){
+  #footer .footerText .text p {
+    font-size: 10px;
+  }
+}
